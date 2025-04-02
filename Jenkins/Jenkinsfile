@@ -51,7 +51,7 @@ pipeline {
                     // Make sure you're in the right directory
                     dir('terraform') {
                         if (params.terraformAction == 'apply') {
-                            sh 'terraform apply -input = false tfplan'
+                            sh 'terraform apply -input=false tfplan'
                         } else if (params.terraformAction == 'destroy') {
                             sh 'terraform destroy -auto-approve'
                         }
