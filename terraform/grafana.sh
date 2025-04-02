@@ -3,4 +3,3 @@ sudo yum install -y https://dl.grafana.com/enterprise/release/grafana-enterprise
 sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable grafana-server.service
 sudo /bin/systemctl start grafana-server.service
-
